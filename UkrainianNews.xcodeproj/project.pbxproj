@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		76DB0ABE2280E82100B3BE78 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DB0ABD2280E82100B3BE78 /* UIButtonX.swift */; };
+		769FB15C22822ADC001F5E55 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769FB15B22822ADC001F5E55 /* UIButtonX.swift */; };
 		76DCD6B5227F1F0F00113A28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DCD6B4227F1F0F00113A28 /* AppDelegate.swift */; };
 		76DCD6B8227F1F0F00113A28 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DCD6B7227F1F0F00113A28 /* Model.swift */; };
 		76DCD6BA227F1F0F00113A28 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DCD6B9227F1F0F00113A28 /* Data.swift */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		76DB0ABD2280E82100B3BE78 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIButtonX.swift; path = ../../../Desktop/UIButtonX.swift; sourceTree = "<group>"; };
+		769FB15B22822ADC001F5E55 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIButtonX.swift; path = ../../../Desktop/UIButtonX.swift; sourceTree = "<group>"; };
 		76DCD6B1227F1F0F00113A28 /* UkrainianNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UkrainianNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DCD6B4227F1F0F00113A28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76DCD6B7227F1F0F00113A28 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		76C770B02280938C0063C60D /* Round */ = {
 			isa = PBXGroup;
 			children = (
-				76DB0ABD2280E82100B3BE78 /* UIButtonX.swift */,
+				769FB15B22822ADC001F5E55 /* UIButtonX.swift */,
 			);
 			name = Round;
 			sourceTree = "<group>";
@@ -203,7 +203,7 @@
 			files = (
 				76DCD6C5227F1F0F00113A28 /* ViewController.swift in Sources */,
 				76DCD6B5227F1F0F00113A28 /* AppDelegate.swift in Sources */,
-				76DB0ABE2280E82100B3BE78 /* UIButtonX.swift in Sources */,
+				769FB15C22822ADC001F5E55 /* UIButtonX.swift in Sources */,
 				76DCD6C2227F1F0F00113A28 /* TableViewCell.swift in Sources */,
 				76DCD6BA227F1F0F00113A28 /* Data.swift in Sources */,
 				76DCD6B8227F1F0F00113A28 /* Model.swift in Sources */,

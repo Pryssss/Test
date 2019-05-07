@@ -9,8 +9,8 @@ class myData {
             guard let url = URL(string: jsonUrlString) else { return }
             if let data = try? Data(contentsOf: url) {
                 let decoder = JSONDecoder()
-                if let jsonPetitions = try? decoder.decode(Model.self, from: data) {
-                    finalData = jsonPetitions.articles
+                if let jsonNews = try? decoder.decode(Model.self, from: data) {
+                    finalData = jsonNews.articles
                 }
             }
             DispatchQueue.main.async {
