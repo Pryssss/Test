@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UkrainianNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="XLr-1J-OP4">
+                                <rect key="frame" x="0.0" y="44" width="375" height="56"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="354" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6aJ-45-chj">
+                                <rect key="frame" x="0.0" y="100" width="375" height="712"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tableViewCell" rowHeight="354" id="IAx-YX-msd" customClass="TableViewCell" customModule="UkrainianNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="354"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IAx-YX-msd" id="k6d-d6-QSP">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="353.66666666666669"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="uA8-xG-341">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="353.66666666666669"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OT7-Dc-u8j">
+                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7iz-LA-0C9">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="7iz-LA-0C9" secondAttribute="trailing" id="2IN-yk-qiP"/>
+                                                                <constraint firstItem="7iz-LA-0C9" firstAttribute="leading" secondItem="OT7-Dc-u8j" secondAttribute="leading" id="Skk-OB-83X"/>
+                                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="Z7p-lm-vk3"/>
+                                                                <constraint firstItem="7iz-LA-0C9" firstAttribute="top" secondItem="OT7-Dc-u8j" secondAttribute="top" id="bBM-i6-eio"/>
+                                                                <constraint firstAttribute="bottom" secondItem="7iz-LA-0C9" secondAttribute="bottom" id="cvE-vO-UN5"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="f9m-Xo-QoX">
+                                                            <rect key="frame" x="0.0" y="256" width="375" height="22"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4io-t2-gU0" customClass="UIButtonX" customModule="UkrainianNews" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="22" id="aRo-D0-uyP"/>
+                                                                        <constraint firstAttribute="width" constant="22" id="yaL-95-U7q"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="11"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Title Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elT-mX-MDn">
+                                                                    <rect key="frame" x="26" y="0.0" width="267.33333333333331" height="22"/>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" text="Data1 Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTs-fe-WQ3">
+                                                                    <rect key="frame" x="297.33333333333331" y="0.0" width="55" height="22"/>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="10"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzl-LI-n6H" customClass="UIButtonX" customModule="UkrainianNews" customModuleProvider="target">
+                                                                    <rect key="frame" x="356.33333333333331" y="0.0" width="18.666666666666686" height="22"/>
+                                                                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <state key="normal" image="right"/>
+                                                                    <connections>
+                                                                        <action selector="buttonWasTapped:" destination="IAx-YX-msd" eventType="touchUpInside" id="esH-AU-JjS"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2K8-VH-8oX">
+                                                            <rect key="frame" x="0.0" y="284" width="375" height="22"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="1000" text="Subtitle Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okm-fo-CUo">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="22"/>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Ax3-ZA-5P6">
+                                                            <rect key="frame" x="0.0" y="312" width="375" height="41.666666666666686"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Data2 Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7p2-iR-b8b">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="41.666666666666664"/>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="f9m-Xo-QoX" secondAttribute="trailing" id="4TB-iH-oG0"/>
+                                                        <constraint firstItem="Ax3-ZA-5P6" firstAttribute="top" secondItem="2K8-VH-8oX" secondAttribute="bottom" constant="6" id="7LX-1m-m6b"/>
+                                                        <constraint firstAttribute="trailing" secondItem="OT7-Dc-u8j" secondAttribute="trailing" id="9Rt-Mv-qYc"/>
+                                                        <constraint firstItem="f9m-Xo-QoX" firstAttribute="leading" secondItem="uA8-xG-341" secondAttribute="leading" id="Ivd-ZI-5rR"/>
+                                                        <constraint firstItem="OT7-Dc-u8j" firstAttribute="leading" secondItem="uA8-xG-341" secondAttribute="leading" id="LGf-s0-Mt7"/>
+                                                        <constraint firstItem="2K8-VH-8oX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="f9m-Xo-QoX" secondAttribute="bottom" constant="6" id="W2r-rJ-LC7"/>
+                                                        <constraint firstItem="f9m-Xo-QoX" firstAttribute="top" secondItem="OT7-Dc-u8j" secondAttribute="bottom" constant="6" id="a05-9T-Lg8"/>
+                                                        <constraint firstItem="Ax3-ZA-5P6" firstAttribute="leading" secondItem="uA8-xG-341" secondAttribute="leading" id="ahc-tJ-bx8"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Ax3-ZA-5P6" secondAttribute="trailing" id="bEH-od-kTY"/>
+                                                        <constraint firstItem="OT7-Dc-u8j" firstAttribute="leading" secondItem="uA8-xG-341" secondAttribute="leading" id="htC-TP-6uG"/>
+                                                        <constraint firstAttribute="trailing" secondItem="OT7-Dc-u8j" secondAttribute="trailing" id="lWf-wR-uba"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.9724976206" green="0.97079868889999998" blue="0.92065135819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="uA8-xG-341" firstAttribute="top" secondItem="k6d-d6-QSP" secondAttribute="top" id="61q-hJ-qjf"/>
+                                                <constraint firstAttribute="bottom" secondItem="uA8-xG-341" secondAttribute="bottom" id="e6r-LN-TNw"/>
+                                                <constraint firstItem="uA8-xG-341" firstAttribute="leading" secondItem="k6d-d6-QSP" secondAttribute="leading" id="i3t-mh-2fl"/>
+                                                <constraint firstAttribute="trailing" secondItem="uA8-xG-341" secondAttribute="trailing" id="jQb-Hf-Llg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="blueButton" destination="4io-t2-gU0" id="Zx7-hj-fsN"/>
+                                            <outlet property="cellImageView" destination="7iz-LA-0C9" id="b8p-cN-Mav"/>
+                                            <outlet property="data1Label" destination="QTs-fe-WQ3" id="e9e-dP-yZ0"/>
+                                            <outlet property="data2Label" destination="7p2-iR-b8b" id="1H0-Qj-YIO"/>
+                                            <outlet property="imageStackViewHeightConstraint" destination="Z7p-lm-vk3" id="MCM-6L-ylq"/>
+                                            <outlet property="subtitleLabel" destination="okm-fo-CUo" id="9yj-Y4-ndp"/>
+                                            <outlet property="titleLabel" destination="elT-mX-MDn" id="VmW-3b-I2j"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6aJ-45-chj" firstAttribute="top" secondItem="XLr-1J-OP4" secondAttribute="bottom" id="0c5-1V-t4N"/>
+                            <constraint firstAttribute="bottom" secondItem="6aJ-45-chj" secondAttribute="bottom" id="2f3-ir-RIu"/>
+                            <constraint firstItem="XLr-1J-OP4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="51m-8s-frO"/>
+                            <constraint firstItem="XLr-1J-OP4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ADo-OF-AOh"/>
+                            <constraint firstAttribute="trailing" secondItem="XLr-1J-OP4" secondAttribute="trailing" id="GRl-3F-E7k"/>
+                            <constraint firstItem="XLr-1J-OP4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Nqs-M1-HR2"/>
+                            <constraint firstItem="6aJ-45-chj" firstAttribute="leading" secondItem="XLr-1J-OP4" secondAttribute="leading" id="fbZ-0a-PxO"/>
+                            <constraint firstItem="6aJ-45-chj" firstAttribute="trailing" secondItem="XLr-1J-OP4" secondAttribute="trailing" id="iqU-MA-AKX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="seacrhBar" destination="XLr-1J-OP4" id="Zhj-nY-hVi"/>
+                        <outlet property="tableView" destination="6aJ-45-chj" id="jaB-7w-YEL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.91625615763547"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="right" width="18.5" height="22"/>
+    </resources>
+</document>
