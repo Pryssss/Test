@@ -17,7 +17,9 @@ class TableViewCell: UITableViewCell {
     @IBAction func buttonWasTapped(_ sender: Any) {
         var url: URL?
         for item in data {
-            url = URL(string: item.url!)
+            if let currentUrl = item.url {
+                url = URL(string: currentUrl)
+            }
         }
         if let currentUrl = url {
             UIApplication.shared.open(currentUrl, options: [:], completionHandler: nil)
@@ -41,15 +43,15 @@ class TableViewCell: UITableViewCell {
                 imageStackViewHeightConstraint.constant = 0
                 return
             }
+            guard let source = model.source?.name else { return }
             
             if (UIImage(data: currentImage) != nil) {
                 cellImageView.image = UIImage(data: currentImage)
-                
             }
             titleLabel.text = model.title
             subtitleLabel.text = model.description
             data1Label.text = model.publishedAt
-            data2Label.text = model.source!.name
+            data2Label.text = source
         }
     }
 }

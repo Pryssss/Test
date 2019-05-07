@@ -43,7 +43,6 @@ extension ViewController: UITableViewDataSource {
         } else {
             cell.setup(models: [tableData[indexPath.row]])
         }
-//        cell.setup(models: [tableData[indexPath.row]])
         return cell
     }
 }
