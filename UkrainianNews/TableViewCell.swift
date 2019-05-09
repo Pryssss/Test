@@ -48,9 +48,17 @@ class TableViewCell: UITableViewCell {
             if (UIImage(data: currentImage) != nil) {
                 cellImageView.image = UIImage(data: currentImage)
             }
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ssZZZ"
+            guard let safeDate = model.publishedAt else { return }
+            let date = dateFormatter.date(from: safeDate)
+            dateFormatter.dateStyle = .medium
+            let dateString = dateFormatter.string(from: date!)
+            
             titleLabel.text = model.title
             subtitleLabel.text = model.description
-            data1Label.text = model.publishedAt
+            data1Label.text = dateString
             data2Label.text = source
         }
     }
