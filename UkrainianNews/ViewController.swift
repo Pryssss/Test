@@ -20,9 +20,7 @@ class ViewController: UIViewController {
             self.tableData = data
             self.tableView.reloadData()
         }
-    
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 500
+        setupCell()
     }
 }
 
@@ -45,6 +43,11 @@ extension ViewController: UITableViewDataSource {
         }
         return cell
     }
+    
+    func setupCell() {
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 500
+    }
 }
 
 
@@ -58,6 +61,7 @@ extension ViewController: UISearchBarDelegate {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searching = false
         searchBar.text = ""
+        searchBar.endEditing(true)
         tableView.reloadData()
     }
 }
