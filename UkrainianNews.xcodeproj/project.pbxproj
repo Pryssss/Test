@@ -7,29 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		769FB15C22822ADC001F5E55 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769FB15B22822ADC001F5E55 /* UIButtonX.swift */; };
+		760DF5472295476D0028E538 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DF5462295476D0028E538 /* NetworkManagerProtocol.swift */; };
+		760DF549229547840028E538 /* NetworkRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DF548229547840028E538 /* NetworkRouterProtocol.swift */; };
+		760DF54C229566320028E538 /* NewsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DF54B229566320028E538 /* NewsRouter.swift */; };
+		760DF54F229566840028E538 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DF54E229566840028E538 /* NetworkManager.swift */; };
+		760DF552229567DF0028E538 /* ResponseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DF551229567DF0028E538 /* ResponseContainer.swift */; };
+		760DF554229567F40028E538 /* Arcticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DF553229567F40028E538 /* Arcticle.swift */; };
+		760DF55622956A500028E538 /* NetworkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DF55522956A500028E538 /* NetworkApi.swift */; };
+		760DF55922956AC20028E538 /* Encodable+Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DF55822956AC20028E538 /* Encodable+Generics.swift */; };
+		760DF55B22956AF00028E538 /* URL+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DF55A22956AF00028E538 /* URL+Optional.swift */; };
+		760DF55D22956B0F0028E538 /* AppDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DF55C22956B0F0028E538 /* AppDateFormatter.swift */; };
+		76185D3E228C221B0070CE44 /* UIImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76185D3D228C221B0070CE44 /* UIImageViewX.swift */; };
+		761E979E229D4E6D00FB13AC /* TextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E979D229D4E6D00FB13AC /* TextFieldX.swift */; };
+		761E97A0229D4F0D00FB13AC /* RoundedGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E979F229D4F0D00FB13AC /* RoundedGradientButton.swift */; };
+		761E97A2229D4F3100FB13AC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E97A1229D4F3100FB13AC /* UIViewExtension.swift */; };
+		761E97A4229D4F5B00FB13AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E97A3229D4F5B00FB13AC /* LoginViewController.swift */; };
+		761E97A6229D55B700FB13AC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E97A5229D55B700FB13AC /* RegisterViewController.swift */; };
+		761EFB80229C17B800A99BDF /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761EFB7F229C17B800A99BDF /* UIViewX.swift */; };
+		761EFB87229C180B00A99BDF /* ThemeColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761EFB86229C180B00A99BDF /* ThemeColors.xcassets */; };
+		761EFB89229C183C00A99BDF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761EFB88229C183C00A99BDF /* Theme.swift */; };
+		761EFB8E229C1B3900A99BDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 761EFB8D229C1B3900A99BDF /* Main.storyboard */; };
+		761EFB93229C1C2F00A99BDF /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761EFB92229C1C2F00A99BDF /* DataTableViewCell.swift */; };
 		76DCD6B5227F1F0F00113A28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DCD6B4227F1F0F00113A28 /* AppDelegate.swift */; };
-		76DCD6B8227F1F0F00113A28 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DCD6B7227F1F0F00113A28 /* Model.swift */; };
-		76DCD6BA227F1F0F00113A28 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DCD6B9227F1F0F00113A28 /* Data.swift */; };
-		76DCD6C0227F1F0F00113A28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76DCD6BF227F1F0F00113A28 /* Main.storyboard */; };
-		76DCD6C2227F1F0F00113A28 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DCD6C1227F1F0F00113A28 /* TableViewCell.swift */; };
 		76DCD6C5227F1F0F00113A28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DCD6C4227F1F0F00113A28 /* ViewController.swift */; };
 		76DCD6C7227F1F1200113A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76DCD6C6227F1F1200113A28 /* Assets.xcassets */; };
 		76DCD6CA227F1F1200113A28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76DCD6C8227F1F1200113A28 /* LaunchScreen.storyboard */; };
+		C81804AFADC88D44E54A341F /* Pods_UkrainianNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A163EA7291EEC2B16014B917 /* Pods_UkrainianNews.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		769FB15B22822ADC001F5E55 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIButtonX.swift; path = ../../../Desktop/UIButtonX.swift; sourceTree = "<group>"; };
+		4F6E507D8DE6FA6E4663419E /* Pods-UkrainianNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UkrainianNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UkrainianNews/Pods-UkrainianNews.debug.xcconfig"; sourceTree = "<group>"; };
+		760DF5462295476D0028E538 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		760DF548229547840028E538 /* NetworkRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouterProtocol.swift; sourceTree = "<group>"; };
+		760DF54B229566320028E538 /* NewsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRouter.swift; sourceTree = "<group>"; };
+		760DF54E229566840028E538 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		760DF551229567DF0028E538 /* ResponseContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseContainer.swift; sourceTree = "<group>"; };
+		760DF553229567F40028E538 /* Arcticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arcticle.swift; sourceTree = "<group>"; };
+		760DF55522956A500028E538 /* NetworkApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApi.swift; sourceTree = "<group>"; };
+		760DF55822956AC20028E538 /* Encodable+Generics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Generics.swift"; sourceTree = "<group>"; };
+		760DF55A22956AF00028E538 /* URL+Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Optional.swift"; sourceTree = "<group>"; };
+		760DF55C22956B0F0028E538 /* AppDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDateFormatter.swift; sourceTree = "<group>"; };
+		76185D3D228C221B0070CE44 /* UIImageViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageViewX.swift; path = ../../../Desktop/DesignableX/UIImageViewX.swift; sourceTree = "<group>"; };
+		761E979D229D4E6D00FB13AC /* TextFieldX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldX.swift; sourceTree = "<group>"; };
+		761E979F229D4F0D00FB13AC /* RoundedGradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedGradientButton.swift; sourceTree = "<group>"; };
+		761E97A1229D4F3100FB13AC /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		761E97A3229D4F5B00FB13AC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		761E97A5229D55B700FB13AC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		761EFB7F229C17B800A99BDF /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewX.swift; path = ../../../Desktop/DesignableX/UIViewX.swift; sourceTree = "<group>"; };
+		761EFB86229C180B00A99BDF /* ThemeColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ThemeColors.xcassets; sourceTree = "<group>"; };
+		761EFB88229C183C00A99BDF /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		761EFB8D229C1B3900A99BDF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		761EFB92229C1C2F00A99BDF /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 		76DCD6B1227F1F0F00113A28 /* UkrainianNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UkrainianNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DCD6B4227F1F0F00113A28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76DCD6B7227F1F0F00113A28 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		76DCD6B9227F1F0F00113A28 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		76DCD6BF227F1F0F00113A28 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		76DCD6C1227F1F0F00113A28 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		76DCD6C4227F1F0F00113A28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		76DCD6C6227F1F1200113A28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76DCD6C9227F1F1200113A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76DCD6CB227F1F1200113A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A163EA7291EEC2B16014B917 /* Pods_UkrainianNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UkrainianNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDAFF4941E18F58A772193D4 /* Pods-UkrainianNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UkrainianNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-UkrainianNews/Pods-UkrainianNews.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,12 +73,131 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C81804AFADC88D44E54A341F /* Pods_UkrainianNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DC5AA32E94A1ADC5D1EFAAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F6E507D8DE6FA6E4663419E /* Pods-UkrainianNews.debug.xcconfig */,
+				FDAFF4941E18F58A772193D4 /* Pods-UkrainianNews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		760DF544229547400028E538 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				760DF550229567D80028E538 /* Models */,
+				760DF54D229566710028E538 /* Managers */,
+				760DF54A229547980028E538 /* Routers */,
+				760DF545229547510028E538 /* Protocols */,
+				760DF55522956A500028E538 /* NetworkApi.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		760DF545229547510028E538 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				760DF5462295476D0028E538 /* NetworkManagerProtocol.swift */,
+				760DF548229547840028E538 /* NetworkRouterProtocol.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		760DF54A229547980028E538 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				760DF54B229566320028E538 /* NewsRouter.swift */,
+			);
+			name = Routers;
+			sourceTree = "<group>";
+		};
+		760DF54D229566710028E538 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				760DF54E229566840028E538 /* NetworkManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		760DF550229567D80028E538 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				760DF551229567DF0028E538 /* ResponseContainer.swift */,
+				760DF553229567F40028E538 /* Arcticle.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		760DF55722956AA80028E538 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				760DF55822956AC20028E538 /* Encodable+Generics.swift */,
+				760DF55A22956AF00028E538 /* URL+Optional.swift */,
+				761E97A1229D4F3100FB13AC /* UIViewExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		760DF55E22956B200028E538 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				760DF55C22956B0F0028E538 /* AppDateFormatter.swift */,
+			);
+			name = Date;
+			sourceTree = "<group>";
+		};
+		761EFB85229C17E500A99BDF /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				761EFB86229C180B00A99BDF /* ThemeColors.xcassets */,
+				761EFB88229C183C00A99BDF /* Theme.swift */,
+			);
+			name = Theme;
+			sourceTree = "<group>";
+		};
+		761EFB8A229C1AAB00A99BDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				761EFB99229C1F4900A99BDF /* MainView */,
+				761EFB98229C1F2F00A99BDF /* Controller */,
+				761EFB8F229C1C1100A99BDF /* Cells */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		761EFB8F229C1C1100A99BDF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				761EFB92229C1C2F00A99BDF /* DataTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		761EFB98229C1F2F00A99BDF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				76DCD6C4227F1F0F00113A28 /* ViewController.swift */,
+				761E97A3229D4F5B00FB13AC /* LoginViewController.swift */,
+				761E97A5229D55B700FB13AC /* RegisterViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		761EFB99229C1F4900A99BDF /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				761EFB8D229C1B3900A99BDF /* Main.storyboard */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
 		76C770AB2280443E0063C60D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -52,12 +207,15 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		76C770B02280938C0063C60D /* Round */ = {
+		76C770B02280938C0063C60D /* CustomClassesUI */ = {
 			isa = PBXGroup;
 			children = (
-				769FB15B22822ADC001F5E55 /* UIButtonX.swift */,
+				761EFB7F229C17B800A99BDF /* UIViewX.swift */,
+				76185D3D228C221B0070CE44 /* UIImageViewX.swift */,
+				761E979D229D4E6D00FB13AC /* TextFieldX.swift */,
+				761E979F229D4F0D00FB13AC /* RoundedGradientButton.swift */,
 			);
-			name = Round;
+			name = CustomClassesUI;
 			sourceTree = "<group>";
 		};
 		76DCD6A8227F1F0F00113A28 = {
@@ -65,6 +223,8 @@
 			children = (
 				76DCD6B3227F1F0F00113A28 /* UkrainianNews */,
 				76DCD6B2227F1F0F00113A28 /* Products */,
+				3DC5AA32E94A1ADC5D1EFAAF /* Pods */,
+				FD80FBE42F7F81DE55C2012D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,7 +239,10 @@
 		76DCD6B3227F1F0F00113A28 /* UkrainianNews */ = {
 			isa = PBXGroup;
 			children = (
-				76DCD6B6227F1F0F00113A28 /* Model */,
+				761EFB85229C17E500A99BDF /* Theme */,
+				760DF55E22956B200028E538 /* Date */,
+				760DF55722956AA80028E538 /* Extensions */,
+				760DF544229547400028E538 /* Networking */,
 				76DCD6BE227F1F0F00113A28 /* View */,
 				76DCD6C3227F1F0F00113A28 /* Controller */,
 				76C770AB2280443E0063C60D /* Resources */,
@@ -87,22 +250,12 @@
 			path = UkrainianNews;
 			sourceTree = "<group>";
 		};
-		76DCD6B6227F1F0F00113A28 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				76DCD6B7227F1F0F00113A28 /* Model.swift */,
-				76DCD6B9227F1F0F00113A28 /* Data.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
 		76DCD6BE227F1F0F00113A28 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				76C770B02280938C0063C60D /* Round */,
+				761EFB8A229C1AAB00A99BDF /* View */,
+				76C770B02280938C0063C60D /* CustomClassesUI */,
 				76DCD6C8227F1F1200113A28 /* LaunchScreen.storyboard */,
-				76DCD6BF227F1F0F00113A28 /* Main.storyboard */,
-				76DCD6C1227F1F0F00113A28 /* TableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -111,9 +264,16 @@
 			isa = PBXGroup;
 			children = (
 				76DCD6B4227F1F0F00113A28 /* AppDelegate.swift */,
-				76DCD6C4227F1F0F00113A28 /* ViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		FD80FBE42F7F81DE55C2012D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A163EA7291EEC2B16014B917 /* Pods_UkrainianNews.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76DCD6CE227F1F1200113A28 /* Build configuration list for PBXNativeTarget "UkrainianNews" */;
 			buildPhases = (
+				D8CCC3D7E751DFD1A1DB9EE4 /* [CP] Check Pods Manifest.lock */,
 				76DCD6AD227F1F0F00113A28 /* Sources */,
 				76DCD6AE227F1F0F00113A28 /* Frameworks */,
 				76DCD6AF227F1F0F00113A28 /* Resources */,
+				ED6D1385C6199404D0D64B09 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,24 +351,87 @@
 			buildActionMask = 2147483647;
 			files = (
 				76DCD6CA227F1F1200113A28 /* LaunchScreen.storyboard in Resources */,
+				761EFB8E229C1B3900A99BDF /* Main.storyboard in Resources */,
+				761EFB87229C180B00A99BDF /* ThemeColors.xcassets in Resources */,
 				76DCD6C7227F1F1200113A28 /* Assets.xcassets in Resources */,
-				76DCD6C0227F1F0F00113A28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D8CCC3D7E751DFD1A1DB9EE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UkrainianNews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED6D1385C6199404D0D64B09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UkrainianNews/Pods-UkrainianNews-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UkrainianNews/Pods-UkrainianNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		76DCD6AD227F1F0F00113A28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				760DF554229567F40028E538 /* Arcticle.swift in Sources */,
+				760DF55B22956AF00028E538 /* URL+Optional.swift in Sources */,
 				76DCD6C5227F1F0F00113A28 /* ViewController.swift in Sources */,
 				76DCD6B5227F1F0F00113A28 /* AppDelegate.swift in Sources */,
-				769FB15C22822ADC001F5E55 /* UIButtonX.swift in Sources */,
-				76DCD6C2227F1F0F00113A28 /* TableViewCell.swift in Sources */,
-				76DCD6BA227F1F0F00113A28 /* Data.swift in Sources */,
-				76DCD6B8227F1F0F00113A28 /* Model.swift in Sources */,
+				760DF55622956A500028E538 /* NetworkApi.swift in Sources */,
+				761EFB80229C17B800A99BDF /* UIViewX.swift in Sources */,
+				760DF54C229566320028E538 /* NewsRouter.swift in Sources */,
+				761EFB89229C183C00A99BDF /* Theme.swift in Sources */,
+				761E97A4229D4F5B00FB13AC /* LoginViewController.swift in Sources */,
+				761E97A6229D55B700FB13AC /* RegisterViewController.swift in Sources */,
+				760DF552229567DF0028E538 /* ResponseContainer.swift in Sources */,
+				760DF54F229566840028E538 /* NetworkManager.swift in Sources */,
+				76185D3E228C221B0070CE44 /* UIImageViewX.swift in Sources */,
+				761E979E229D4E6D00FB13AC /* TextFieldX.swift in Sources */,
+				760DF549229547840028E538 /* NetworkRouterProtocol.swift in Sources */,
+				761E97A2229D4F3100FB13AC /* UIViewExtension.swift in Sources */,
+				760DF55922956AC20028E538 /* Encodable+Generics.swift in Sources */,
+				760DF5472295476D0028E538 /* NetworkManagerProtocol.swift in Sources */,
+				761E97A0229D4F0D00FB13AC /* RoundedGradientButton.swift in Sources */,
+				761EFB93229C1C2F00A99BDF /* DataTableViewCell.swift in Sources */,
+				760DF55D22956B0F0028E538 /* AppDateFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +567,7 @@
 		};
 		76DCD6CF227F1F1200113A28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F6E507D8DE6FA6E4663419E /* Pods-UkrainianNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -360,6 +586,7 @@
 		};
 		76DCD6D0227F1F1200113A28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDAFF4941E18F58A772193D4 /* Pods-UkrainianNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
