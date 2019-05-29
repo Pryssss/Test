@@ -6,5 +6,12 @@ target 'UkrainianNews' do
 
   # Networking
   pod 'Alamofire'
+  #Firebase
+  pod 'Firebase/Core'
+  #Firebase DataBase
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Database'
+  # Email Auth
+  pod 'Firebase/Auth'
 
 end

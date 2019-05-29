@@ -13,6 +13,7 @@ class DataTableViewCell: UITableViewCell {
     
 
     
+    @IBOutlet weak var topConstraint: NSLayoutConstraint!
     @IBOutlet weak var imageViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var photoImageView: UIImageView!
     
@@ -26,6 +27,8 @@ class DataTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
+    var someData: Article? = nil
+    
     override func awakeFromNib() {
         super.awakeFromNib()
        
@@ -38,11 +41,22 @@ class DataTableViewCell: UITableViewCell {
         authorLabel.font = Theme.Font.regular(size: 17)
     }
     
-        func setup(data: Article) {
+    @IBAction func webViewWasTapped(_ sender: Any) {
+        if let currentUrl = someData?.articleURL {
+            UIApplication.shared.open(currentUrl, options: [:], completionHandler: nil)
+        }
+    }
+    func setup(data: Article) {
+            someData = data
             titleLabel.text = data.title
             subtitleLabel.text = data.description
             dateLabel.text = "Published at: \(AppDateFormatter.stringDate(from: data.publishedAt, format: .display))"
-            authorLabel.text = "Source: \(data.source.name)"
+        if let author = data.author {
+             authorLabel.text = "Source: \(String(describing: author))"
+        } else {
+            authorLabel.text = "Without author"
+        }
+       
             
             var commingData: Data? = nil
             if data.imageURL != nil {
@@ -54,26 +68,14 @@ class DataTableViewCell: UITableViewCell {
             guard let currentImage = commingData else {
                 photoImageView.image = nil
                 imageViewHeightConstraint.constant = 0
+                topConstraint.constant = 0
                 return
             }
             
             if (UIImage(data: currentImage) != nil) {
                 photoImageView.image = UIImage(data: currentImage)
             }
-            
-            /// Reset back to zero in case the cell getting dequed had rounded corners.
-//            cellView.layer.cornerRadius = 0
-//            dataView.layer.cornerRadius = 0
-//            bottomConstraint.constant = 0
         }
-        
-//        func roundBottomCorners() {
-//            cellView.layer.cornerRadius = 10
-//            cellView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
-//            dataView.layer.cornerRadius = 10
-//            dataView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
-//            bottomConstraint.constant = 2
-//        }
 }
 
 

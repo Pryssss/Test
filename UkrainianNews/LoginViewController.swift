@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class LoginViewController: UITableViewController {
     
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var loginButton: RoundedGradientButton!
     @IBOutlet weak var registerButton: RoundedGradientButton!
-    @IBOutlet weak var forggotButton: RoundedGradientButton!
     @IBOutlet weak var innerOrbitImageView: UIImageView!
     @IBOutlet weak var orbitImageView: UIImageView!
     @IBOutlet weak var passwordTextField: AppTextField!
@@ -25,7 +26,6 @@ class LoginViewController: UITableViewController {
         
         loginButton.titleLabel?.font = Theme.Font.regular(size: 17)
         registerButton.titleLabel?.font = Theme.Font.regular(size: 17)
-        forggotButton.titleLabel?.font = Theme.Font.regular(size: 15)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -40,6 +40,7 @@ class LoginViewController: UITableViewController {
     }
     
     @IBAction func login(_ sender: Any) {
+        
         /// Hide the keyboard
         view.endEditing(true)
         
@@ -47,17 +48,33 @@ class LoginViewController: UITableViewController {
         logoImageView.stopRotating()
         logoImageView.startRotating(duration: 1, clockwise: true)
         
+        if let email = usernameTextField.text, let password = passwordTextField.text {
+            Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+                if error != nil {
+                    print(error?.localizedDescription as Any)
+                }
+                
+                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let registerViewController = storyBoard.instantiateViewController(withIdentifier: "Main") as! ViewController
+                self.present(registerViewController, animated: true, completion: nil)
+                
+            }
+            
+//            if Auth.auth().currentUser?.uid == nil {
+//                handleLogout()
+//            }
+        }
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Main") as! ViewController
+        self.present(nextViewController, animated:true, completion:nil)
     }
     @IBAction func register(_ sender: Any) {
         
-//        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//        let registerViewController = storyBoard.instantiateViewController(withIdentifier: "Register") as! RegisterViewController
-//        self.present(registerViewController, animated: true, completion: nil)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let registerViewController = storyBoard.instantiateViewController(withIdentifier: "Register") as! RegisterViewController
+        self.present(registerViewController, animated: true, completion: nil)
         
-        
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Register") as! RegisterViewController
-        self.present(nextViewController, animated:true, completion:nil)
     }
     @IBAction func forgotPassword(_ sender: Any) {
         
@@ -65,18 +82,32 @@ class LoginViewController: UITableViewController {
     
     @IBAction func usernameNextKeyboardButtonTapped(_ sender: Any) {
         passwordTextField.becomeFirstResponder()
-
+        
         /// This line prevents the view from scrolling under the keyboard.
-        tableView.scrollRectToVisible(forggotButton.frame, animated: true)
+        
+            }
+    
+    // -------------------------------------
+    // MARK: - private logOut Func
+    // -------------------------------------
+    
+    private func handleLogout() {
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            print(error)
+        }
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Register") as! RegisterViewController
+        self.present(nextViewController, animated:true, completion:nil)
     }
-    
-    
-    
     // -------------------------------------
     // MARK: - Table View Functions
     // -------------------------------------
-
+    
     /// Make the single static cell the same height of the phone
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         var safeAreaHeight: CGFloat = 0
         
@@ -86,5 +117,5 @@ class LoginViewController: UITableViewController {
         
         return view.bounds.height - safeAreaHeight
     }
-
+    
 }

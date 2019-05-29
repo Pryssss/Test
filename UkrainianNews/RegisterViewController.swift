@@ -8,13 +8,12 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class RegisterViewController: UITableViewController {
     
     @IBOutlet weak var fullnameTextField: AppTextField!
-    @IBOutlet weak var usernameTextField: AppTextField!
     @IBOutlet weak var passwordTextField: AppTextField!
-    @IBOutlet weak var submitPasswordTextField: AppTextField!
     @IBOutlet weak var emailTextField: AppTextField!
     @IBOutlet weak var registerButton: RoundedGradientButton!
     @IBOutlet weak var loginButton: RoundedGradientButton!
@@ -44,13 +43,7 @@ class RegisterViewController: UITableViewController {
     @IBAction func fullnameTextFieldTapped(_ sender: Any) {
         
     }
-    @IBAction func usernameTextFieldTapped(_ sender: Any) {
-        
-    }
     @IBAction func passwordTextFieldTapped(_ sender: Any) {
-        
-    }
-    @IBAction func submitPasswordTextFieldTapped(_ sender: Any) {
         
     }
     @IBAction func emailTextFieldTapped(_ sender: Any) {
@@ -58,10 +51,35 @@ class RegisterViewController: UITableViewController {
     }
     
     @IBAction func registerButtonTapped(_ sender: Any) {
-        
+        if let email = emailTextField.text, let password = passwordTextField.text, let name = fullnameTextField.text {
+            Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
+                if error != nil {
+                    print(error?.localizedDescription as Any)
+                    return
+                }
+                
+                guard let uid = user?.user.uid else {
+                    return
+                }
+                
+                let ref = Database.database().reference(fromURL: "https://ukrainiannews-73a04.firebaseio.com/")
+                let userReference = ref.child("users").child(uid)
+                let values = ["names" : name, "email" : email]
+                
+                userReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
+                    if err != nil {
+                        print(err?.localizedDescription as Any)
+                        return
+                    }
+                    
+                })
+            }
+        }
     }
     @IBAction func loginButtonTapped(_ sender: Any) {
-        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Login") as! LoginViewController
+        self.present(nextViewController, animated:true, completion:nil)
     }
     // -------------------------------------
     // MARK: - Table View Functions

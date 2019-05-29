@@ -28,6 +28,8 @@
 		761EFB89229C183C00A99BDF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761EFB88229C183C00A99BDF /* Theme.swift */; };
 		761EFB8E229C1B3900A99BDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 761EFB8D229C1B3900A99BDF /* Main.storyboard */; };
 		761EFB93229C1C2F00A99BDF /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761EFB92229C1C2F00A99BDF /* DataTableViewCell.swift */; };
+		765A41E7229DF2FE00236CD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 765A41E6229DF2FE00236CD9 /* GoogleService-Info.plist */; };
+		765A41E9229E99B400236CD9 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A41E8229E99B400236CD9 /* UIButtonX.swift */; };
 		76DCD6B5227F1F0F00113A28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DCD6B4227F1F0F00113A28 /* AppDelegate.swift */; };
 		76DCD6C5227F1F0F00113A28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DCD6C4227F1F0F00113A28 /* ViewController.swift */; };
 		76DCD6C7227F1F1200113A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76DCD6C6227F1F1200113A28 /* Assets.xcassets */; };
@@ -58,6 +60,8 @@
 		761EFB88229C183C00A99BDF /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		761EFB8D229C1B3900A99BDF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		761EFB92229C1C2F00A99BDF /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		765A41E6229DF2FE00236CD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		765A41E8229E99B400236CD9 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIButtonX.swift; path = ../../UkrainianNews/UkrainianNews/UIButtonX.swift; sourceTree = "<group>"; };
 		76DCD6B1227F1F0F00113A28 /* UkrainianNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UkrainianNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DCD6B4227F1F0F00113A28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76DCD6C4227F1F0F00113A28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -162,14 +166,14 @@
 			name = Theme;
 			sourceTree = "<group>";
 		};
-		761EFB8A229C1AAB00A99BDF /* View */ = {
+		761EFB8A229C1AAB00A99BDF /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				761EFB99229C1F4900A99BDF /* MainView */,
 				761EFB98229C1F2F00A99BDF /* Controller */,
 				761EFB8F229C1C1100A99BDF /* Cells */,
 			);
-			name = View;
+			name = Views;
 			sourceTree = "<group>";
 		};
 		761EFB8F229C1C1100A99BDF /* Cells */ = {
@@ -202,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				76DCD6C6227F1F1200113A28 /* Assets.xcassets */,
+				765A41E6229DF2FE00236CD9 /* GoogleService-Info.plist */,
 				76DCD6CB227F1F1200113A28 /* Info.plist */,
 			);
 			name = Resources;
@@ -211,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				761EFB7F229C17B800A99BDF /* UIViewX.swift */,
+				765A41E8229E99B400236CD9 /* UIButtonX.swift */,
 				76185D3D228C221B0070CE44 /* UIImageViewX.swift */,
 				761E979D229D4E6D00FB13AC /* TextFieldX.swift */,
 				761E979F229D4F0D00FB13AC /* RoundedGradientButton.swift */,
@@ -253,7 +259,7 @@
 		76DCD6BE227F1F0F00113A28 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				761EFB8A229C1AAB00A99BDF /* View */,
+				761EFB8A229C1AAB00A99BDF /* Views */,
 				76C770B02280938C0063C60D /* CustomClassesUI */,
 				76DCD6C8227F1F1200113A28 /* LaunchScreen.storyboard */,
 			);
@@ -352,6 +358,7 @@
 			files = (
 				76DCD6CA227F1F1200113A28 /* LaunchScreen.storyboard in Resources */,
 				761EFB8E229C1B3900A99BDF /* Main.storyboard in Resources */,
+				765A41E7229DF2FE00236CD9 /* GoogleService-Info.plist in Resources */,
 				761EFB87229C180B00A99BDF /* ThemeColors.xcassets in Resources */,
 				76DCD6C7227F1F1200113A28 /* Assets.xcassets in Resources */,
 			);
@@ -392,12 +399,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-UkrainianNews/Pods-UkrainianNews-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -413,6 +428,7 @@
 			files = (
 				760DF554229567F40028E538 /* Arcticle.swift in Sources */,
 				760DF55B22956AF00028E538 /* URL+Optional.swift in Sources */,
+				765A41E9229E99B400236CD9 /* UIButtonX.swift in Sources */,
 				76DCD6C5227F1F0F00113A28 /* ViewController.swift in Sources */,
 				76DCD6B5227F1F0F00113A28 /* AppDelegate.swift in Sources */,
 				760DF55622956A500028E538 /* NetworkApi.swift in Sources */,
