@@ -10,9 +10,6 @@ import UIKit
 
 class DataTableViewCell: UITableViewCell {
     
-    
-
-    
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     @IBOutlet weak var imageViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var photoImageView: UIImageView!
