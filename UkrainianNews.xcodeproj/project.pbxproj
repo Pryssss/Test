@@ -96,7 +96,6 @@
 		760DF544229547400028E538 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				760DF550229567D80028E538 /* Models */,
 				760DF54D229566710028E538 /* Managers */,
 				760DF54A229547980028E538 /* Routers */,
 				760DF545229547510028E538 /* Protocols */,
@@ -145,6 +144,7 @@
 				760DF55822956AC20028E538 /* Encodable+Generics.swift */,
 				760DF55A22956AF00028E538 /* URL+Optional.swift */,
 				761E97A1229D4F3100FB13AC /* UIViewExtension.swift */,
+				760DF550229567D80028E538 /* Models */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
